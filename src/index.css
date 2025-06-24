@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import 'tailwindcss';
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono', monospace;
+  font-optical-sizing: auto;
+  background-color: #242424;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: white;
 }

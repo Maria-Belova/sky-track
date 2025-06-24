@@ -1,3 +1,3 @@
 export const PageUrl = {
-  'HOME_PAGE': '/',
+	HOME_PAGE: '/',
 } as const;

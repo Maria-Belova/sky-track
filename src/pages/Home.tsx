@@ -1,3 +1,9 @@
+import { FlightList } from '../components/flight-list/FlightList';
+
 export function HomePage() {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <FlightList />
+    </div>
+  );
 }

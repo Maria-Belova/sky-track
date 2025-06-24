@@ -1,6 +1,6 @@
 import type { JSX } from 'react';
 import { HomePage } from '../../pages/Home';
-import { PageUrl } from '../../constants/PageUrl';
+import { PageUrl } from '../../constants/pageUrl';
 
 interface IRoute {
   path: string;
