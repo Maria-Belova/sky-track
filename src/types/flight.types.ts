@@ -6,4 +6,5 @@ export interface IFlight {
   toSity: string;
   toCode: string;
   aircraftReg: string;
+  image: string;
 }

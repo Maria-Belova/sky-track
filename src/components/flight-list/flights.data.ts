@@ -1,4 +1,6 @@
-export const FLIGHTS = [
+import type { IFlight } from '../../types/flight.types';
+
+export const FLIGHTS: IFlight[] = [
   {
     logo: '/logos/turkish.svg',
     airline: 'TK143',
@@ -7,6 +9,7 @@ export const FLIGHTS = [
     toSity: 'Beijing',
     toCode: 'PEK',
     aircraftReg: 'TC-JFP',
+    image: '/flights/turkish.png',
   },
   {
     logo: '/logos/ryanair.svg',
@@ -16,6 +19,7 @@ export const FLIGHTS = [
     toSity: 'Larnaca',
     toCode: 'LCA',
     aircraftReg: 'D-AISP',
+    image: '/flights/turkish.png',
   },
   {
     logo: '/logos/s7.svg',
@@ -25,6 +29,7 @@ export const FLIGHTS = [
     toSity: 'Tbilisi',
     toCode: 'TBS',
     aircraftReg: 'RA-73415',
+    image: '/flights/turkish.png',
   },
   {
     logo: '/logos/swiss.svg',
@@ -34,6 +39,7 @@ export const FLIGHTS = [
     toSity: 'Baku',
     toCode: 'GYD',
     aircraftReg: 'HB-JHK',
+    image: '/flights/turkish.png',
   },
   {
     logo: '/logos/lufthansa.svg',
@@ -43,5 +49,6 @@ export const FLIGHTS = [
     toSity: 'Muscat',
     toCode: 'MCT',
     aircraftReg: 'D-AHD',
+    image: '/flights/turkish.png',
   },
 ];

@@ -1,8 +1,7 @@
-import { type FC } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import { routes } from './routes.data';
 
-const Router: FC = () => {
+const Router = () => {
   return (
     <div>
       <BrowserRouter>
