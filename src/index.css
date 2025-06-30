@@ -3,14 +3,15 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --breakpoint-lg: 57rem;
+}
+
 :root {
   font-family: 'JetBrains Mono', monospace;
   font-optical-sizing: auto;
-  background-color: #555555;
-}
-
-.dark {
-  background: linear-gradient(#91bddc, #A3C7E1)
+  background: url(/images/bg-forest.jpg);
+  background-size: cover;
 }
 
 body {
