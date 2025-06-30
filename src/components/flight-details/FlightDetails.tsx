@@ -36,11 +36,13 @@ export const FlightDetails = () => {
           className='fixed top-8 right-8 w-md'
         >
           <div className='bg-neutral-950 overflow-y-scroll w-md rounded-4xl' style={{ height: 'calc(100vh - 64px)' }}>
-            <FlightTopPanel flight={flight} onClick={handleRemoveParam} />
-            <FlightImage flight={flight} />
-            <FlightRoute flight={flight} />
-            <FlightSchedule />
-            <FlightInformation flight={flight} />
+            <div className='overflow-y-scroll' style={{ height: 'calc(100% - 88px - 16px)' }}>
+              <FlightTopPanel flight={flight} onClick={handleRemoveParam} />
+              <FlightImage flight={flight} />
+              <FlightRoute flight={flight} />
+              <FlightSchedule />
+              <FlightInformation flight={flight} />
+            </div>
             <FlightActions />
           </div>
         </motion.div>

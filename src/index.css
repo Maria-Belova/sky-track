@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   font-family: 'JetBrains Mono', monospace;
   font-optical-sizing: auto;
   background-color: #555555;
+}
+
+.dark {
+  background: linear-gradient(#91bddc, #A3C7E1)
 }
 
 body {
