@@ -2,6 +2,7 @@ import type { IFlight } from '../../types/flight.types';
 
 export const FLIGHTS: IFlight[] = [
   {
+    id: 'TK143',
     logo: '/logos/turkish.svg',
     airline: { flightNumber: 'TK143', country: 'Turkey' },
     aircraftReg: 'TC-JFP',
@@ -29,6 +30,7 @@ export const FLIGHTS: IFlight[] = [
     },
   },
   {
+    id: 'RN1782',
     logo: '/logos/ryanair.svg',
     airline: { flightNumber: 'RN1782', country: 'Ireland' },
     aircraftReg: 'D-AISP',
@@ -56,6 +58,7 @@ export const FLIGHTS: IFlight[] = [
     },
   },
   {
+    id: 'S7124',
     logo: '/logos/s7.svg',
     airline: { flightNumber: 'S7124', country: 'Russia' },
     aircraftReg: 'RA-73415',
@@ -83,6 +86,7 @@ export const FLIGHTS: IFlight[] = [
     },
   },
   {
+    id: 'LX318',
     logo: '/logos/swiss.svg',
     airline: { flightNumber: 'LX318', country: 'Switzerland' },
     aircraftReg: 'HB-JHK',
@@ -110,6 +114,7 @@ export const FLIGHTS: IFlight[] = [
     },
   },
   {
+    id: 'LH401',
     logo: '/logos/lufthansa.svg',
     airline: { flightNumber: 'LH401', country: 'Germany' },
     aircraftReg: 'D-AIXD',

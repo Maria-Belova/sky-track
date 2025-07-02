@@ -22,6 +22,7 @@ export interface IFlightLocation {
 }
 
 export interface IFlight {
+  id: string;
   airplane: IFlightAirplane;
   route: IFlightRoute;
   logo: string;

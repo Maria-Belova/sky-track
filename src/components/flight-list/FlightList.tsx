@@ -17,9 +17,9 @@ export const FlightList = () => {
   });
 
   return (
-    <div className='flex flex-col gap-8' style={{ maxHeight: 'calc(100vh - 136px - 32px)' }}>
+    <div className='w-full flex flex-col gap-8' style={{ maxHeight: 'calc(100vh - 136px - 32px)' }}>
       <SearchField value={searchValue} onChange={(e) => setSearcValue(e)} />
-      <div className='w-sm overflow-y-scroll space-y-4' style={{ maxHeight: 'calc(100vh - 136px - 32px - 60px - 40px)' }}>
+      <div className='overflow-y-scroll space-y-4' style={{ maxHeight: 'calc(100vh - 136px - 32px - 60px - 40px)' }}>
         {flights.map((flight) => {
           return <FlightCard flight={flight} key={flight.airline.flightNumber} />;
         })}
