@@ -3,4 +3,5 @@ export const PageUrl = {
   MY_FLIGHTS: '/my-flights',
   CONTACTS: '/contacts',
   INFORMATION: '/info',
+  FAVORITES: '/favorites',
 } as const;

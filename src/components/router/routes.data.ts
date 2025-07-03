@@ -4,6 +4,7 @@ import { PageUrl } from '../../constants/pageUrl';
 import { FlightsPage } from '../../pages/Flights';
 import { InfoPage } from '../../pages/Info';
 import { ContactsPage } from '../../pages/Contacts';
+import { Favorites } from '../../pages/Favorites';
 
 export interface IRoute {
   path: string;
@@ -31,5 +32,10 @@ export const routes: IRoute[] = [
     path: PageUrl.CONTACTS,
     component: ContactsPage,
     title: 'Contacts',
+  },
+  {
+    path: PageUrl.FAVORITES,
+    component: Favorites,
+    title: 'Favorites',
   },
 ];
