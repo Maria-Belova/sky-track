@@ -9,6 +9,8 @@ import { FlightActions } from './flight-actions/FlightActions';
 import { FlightInformation } from './FlightInformation';
 import { FlightRoute } from './FlightRoute';
 import { FlightSchedule } from './FlightSchedule';
+import { ProgressBar } from '../ui/ProgressBar';
+import { FlightStatus } from './FlightStatus';
 
 export const FlightDetails = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -25,28 +27,29 @@ export const FlightDetails = () => {
   };
 
   return (
-      <AnimatePresence>
-        {flight && (
-          <motion.div
-            key='flight-details'
-            initial={{ x: '100%' }}
-            animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className='fixed top-34 right-8 w-md'
-          >
-            <div tabIndex={0} className='bg-neutral-950 overflow-y-scroll w-md rounded-4xl' style={{ height: 'calc(100vh - 136px - 32px)' }}>
-              <div className='overflow-y-scroll' style={{ height: 'calc(100% - 88px - 16px)' }}>
-                <FlightTopPanel flight={flight} onClick={handleRemoveParam} />
-                <FlightImage flight={flight} />
-                <FlightRoute flight={flight} />
-                <FlightSchedule />
-                <FlightInformation flight={flight} />
-              </div>
-              <FlightActions />
+    <AnimatePresence>
+      {flight && (
+        <motion.div
+          key='flight-details'
+          initial={{ x: '100%' }}
+          animate={{ x: 0 }}
+          exit={{ x: '100%' }}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
+          className='fixed top-34 right-8 w-md'
+        >
+          <div tabIndex={0} className='bg-neutral-950 overflow-y-scroll w-md rounded-4xl' style={{ height: 'calc(100vh - 136px - 32px)' }}>
+            <div className='overflow-y-scroll' style={{ height: 'calc(100% - 88px - 16px)' }}>
+              <FlightTopPanel flight={flight} onClick={handleRemoveParam} />
+              <FlightImage flight={flight} />
+              <FlightRoute flight={flight} />
+              <FlightStatus percentage={flight.progress}/>
+              <FlightSchedule />
+              <FlightInformation flight={flight} />
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            <FlightActions />
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };

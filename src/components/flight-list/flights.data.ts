@@ -28,6 +28,7 @@ export const FLIGHTS: IFlight[] = [
       speed: 870,
       altitude: 10600,
     },
+    progress: 64
   },
   {
     id: 'RN1782',
@@ -56,6 +57,7 @@ export const FLIGHTS: IFlight[] = [
       speed: 840,
       altitude: 11200,
     },
+    progress: 32
   },
   {
     id: 'S7124',
@@ -84,6 +86,7 @@ export const FLIGHTS: IFlight[] = [
       speed: 860,
       altitude: 10900,
     },
+    progress: 75
   },
   {
     id: 'LX318',
@@ -112,6 +115,7 @@ export const FLIGHTS: IFlight[] = [
       speed: 830,
       altitude: 10700,
     },
+    progress: 100
   },
   {
     id: 'LH401',
@@ -140,5 +144,6 @@ export const FLIGHTS: IFlight[] = [
       speed: 890,
       altitude: 11300,
     },
+    progress: 55
   },
 ];

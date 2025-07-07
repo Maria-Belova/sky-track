@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router';
 import type { IFlight } from '../../types/flight.types';
 import { QUERY_PARAM_FLIGHT } from './flight.constants';
 import { FlightCardAction } from './FlightCardAction';
+import { ProgressBar } from '../ui/ProgressBar';
 
 interface IFlightCard {
   flight: IFlight;
@@ -32,11 +33,12 @@ const FlightCard = ({ flight }: IFlightCard) => {
           </div>
           <div className='bg-neutral-800 py-1 px-2 rounded-2xl'>{flight.aircraftReg}</div>
         </div>
-        <div className='flex justify-between mt-8'>
+        <div className='flex justify-between mt-8 gap-4 items-center'>
           <div>
             <div>{flight.from.city}</div>
             <div className='font-semibold text-4xl'>{flight.from.code}</div>
           </div>
+          <ProgressBar percentage={flight.progress} />
           <div>
             <div>{flight.to.city}</div>
             <div className='font-semibold text-4xl'>{flight.to.code}</div>

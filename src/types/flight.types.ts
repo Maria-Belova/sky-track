@@ -30,4 +30,5 @@ export interface IFlight {
   aircraftReg: string;
   from: IFlightLocation;
   to: IFlightLocation;
+  progress: number;
 }
